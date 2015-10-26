@@ -88,6 +88,86 @@ func TestRenderTo(t *testing.T) {
 
 
 
+// func signArticle(nntp NNTPMessage, seed []byte) (signed nntpArticle, err error) {
+
+
+
+/*
+
+func TestsignArticle(t *testing.T) {
+
+	c := new(NNTPMessage)
+	//f  byte := "\xbd" 
+	f := []byte{1, 2, 3, 0, 0, 0}
+	_, err := signArticle(&c,f)
+	
+	if err != nil {
+
+		t.Error("Error signing article.", err)
+
+	}
+
+}
+
+
+*/
+
+
+/*
+func (self articleStore) ReadMessage(r io.Reader) (NNTPMessage, error) {
+  return read_message(r)
+}
+
+  */
+
+
+/* 
+Convert string to io.Reader
+
+b := bytes.NewBufferString("your string")
+
+*/
+
+
+
+
+
+/*
+
+func TestReadMessage(t *testing.T) {
+
+	store := articleStore{
+	    directory: "/some/dir",
+	    temp: config["incoming_dir"],
+	    attachments: config["attachments_dir"],
+	    thumbs: config["thumbs_dir"],
+	    convert_path: config["convert_bin"],
+	    ffmpeg_path: config["ffmpegthumbnailer_bin"],
+	    sox_path: config["sox_bin"],
+	    database: database,
+	  }
+// Get sox path: `which sox`
+
+
+	b := bytes.NewBufferString("your string")
+	 _, err := store.ReadMessage(b)
+	
+	if err != nil {
+
+		t.Error("Unable to read message.", err)
+
+	}
+
+}
+
+*/
+
+
+
+
+
+
+
 
 
 
