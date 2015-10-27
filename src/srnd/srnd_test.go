@@ -130,9 +130,9 @@ b := bytes.NewBufferString("your string")
 
 
 
-
-
 /*
+
+
 
 func TestReadMessage(t *testing.T) {
 
@@ -160,6 +160,7 @@ func TestReadMessage(t *testing.T) {
 
 }
 
+
 */
 
 
@@ -167,10 +168,56 @@ func TestReadMessage(t *testing.T) {
 
 
 
+func TestGenSRNdConfig(t *testing.T) {
+
+
+
+	err := GenSRNdConfig()
+	// Generate default feeds.ini
+	if err != nil {
+
+		t.Error("Error generting srnd.ini", err)
+
+	}
+
+}
 
 
 
 
+
+/*
+
+
+
+
+func TestGenerateThumbnail(t *testing.T) {
+
+
+	err := GenSRNdConfig() 
+
+
+	conf := ReadConfig()
+
+
+	store := createArticleStore(conf.store, nil)
+
+
+
+
+	err := store.GenerateThumbnail("testdata/i2p.jpeg")
+	// Generate default feeds.ini
+	if err != nil {
+
+		t.Error("Error Generating thumbnail.", err)
+
+	}
+
+}
+
+
+
+  */
 
 
 
